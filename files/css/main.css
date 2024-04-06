@@ -109,3 +109,8 @@ right: 8%;}
     background: #4d4d4d;
     opacity: 0.5;
   }
+@media screen and (max-width: 525px) {
+h1{font-size: 2em; margin-bottom: 12px;}
+h2{font-size: 1em; margin-bottom: 12px;}
+h3{font-size: 0.5em; margin-bottom: 12px;}
+}
