@@ -15,8 +15,11 @@
     <meta name="theme-color" content="#ffffff">
     <!-- Bootstrap core CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <style>
-    </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     <!-- Site CSS -->
     <link href="./files/css/main.css" rel="stylesheet">
 </head>
@@ -24,7 +27,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark blue sticky-top">
         <div class="container-fluid container">
-          <a class="navbar-brand" href="/"><img src="./files/images/logo-horz.svg" alt="" width="225" height="auto"></a>
+          <a class="navbar-brand" href="/"><img src="./files/images/logo-horz.svg" alt="heavens pillar game" width="225" height="auto"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -51,11 +54,11 @@
         <div class="mb-5 hero container">
             <div class="video-container row flex-row">
                         <div class="col-12 col-sm-5 caption px-5">
-                            <img src="./files/images/logo-color.svg" class="mt-4 mb-3 hp-logo">
-                            <p class="text-center mb-4"><a class="btn btn-yellow btn-lg bold" href="/play">PLAY THE DEMO&nbsp;&#187;</a></p>
+                            <img src="./files/images/logo-color.svg" alt="heaven's pillar game logo" class="mt-4 mb-3 hp-logo" data-aos="zoom-in">
+                            <p class="text-center mb-4"><a class="btn btn-yellow btn-lg bold" href="/play" data-aos="zoom-in">PLAY THE DEMO&nbsp;&#187;</a></p>
                         </div>
-                <div class="d-none d-sm-block col-12 col-sm-7 caption p-0">
-                    <img src="./files/images/character-renders.png">
+                <div class="d-none d-sm-block col-12 col-sm-7 caption p-0" data-aos="zoom-in">
+                    <img src="./files/images/character-renders.png" alt="renders of meihua lin and huolong jin, the protagonists of heaven's pillar">
                 </div>
                     <video autoplay muted loop>
                         <source src="./files/images/background.mp4" type="video/mp4" />
@@ -65,24 +68,24 @@
         <div id="abt"></div>
         <section class="py-5">
             <div class="container px-5">
-                <div class="row blue border-rounded mb-5 shd">
+                <div class="row blue border-rounded mb-5 shd" data-aos="fade-up">
                     <div class="col-12 px-5">
                     <h2 class="mt-5">The Eight Pillars Are Crumbling</h2>
                     <p class="lead">Embark on a thrilling journey in <em>Heaven's Pillar</em>&nbsp;&mdash; a fast paced 2-player beat&nbsp;'em&nbsp;up video game where you'll immerse yourself in the struggle of two gods trapped in mortal shells striving to reclaim their stolen divinity and restore celestial harmony.</p>
                     </div>
                 </div>
-                <div class="row blue border-rounded mb-5 shd flex-row-reverse">
+                <div class="row blue border-rounded mb-5 shd flex-row-reverse" data-aos="fade-left">
                     <div class="col-12 col-sm-4 p-0">
-                        <img src="./files/images/combat.png" class="border-rounded">
+                        <img src="./files/images/combat.png" alt ="screenshot of heaven's pillar combat gameplay"class="border-rounded">
                     </div>
                     <div class="col-12 col-sm-8 px-5">
                     <h2 class="mt-5">The Fight of Your Life</h2>
                     <p class="lead">Experience intense, lightning-fast combat as you unleash devastating combos and special attacks against waves of formidable foes. With seamless controls and fluid animations, every punch, kick, and throw feels incredibly satisfying as you master the art of combat and unleash your divine prowess upon your enemies.</p>
                 </div>
                 </div>
-                <div class="row blue border-rounded mb-5 shd">
+                <div class="row blue border-rounded mb-5 shd" data-aos="fade-right">
                     <div class="col-12 col-sm-4 p-0">
-                        <img src="./files/images/2-player.png" class="border-rounded">
+                        <img src="./files/images/2-player.png" alt="screenshot of heavens pillar, a new beat em up game" class="border-rounded">
                     </div>
                     <div class="col-12 col-sm-8 px-5">
                     <h2 class="mt-5">Can't Go It Alone?</h2>
@@ -97,7 +100,7 @@
           <div class="row justify-content-between align-items-center">
     <div class="col-md-4 d-flex">
       <a href="index.html" class="mb-3 me-3 mb-md-0 text-white bold text-decoration-none lh-1">
-        <img src="./files/images/logo-color.svg" width="100" height="auto"/>
+        <img src="./files/images/logo-color.svg" alt="heaven's pillar" width="100" height="auto"/>
       </a>
       <span class="mt-3 mb-md-0 text-white bold">© 2024 HEAVEN'S PILLAR</span>
     </div>
