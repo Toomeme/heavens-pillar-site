@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: 'airborne_gpbold';
+    src: url('../fonts/airborne_gp-webfont.woff2') format('woff2'),
+         url('../fonts/airborne_gp-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+:root
+{
+    --blue: #011928;
+    --yellow: #fff786;
+    --white: #fbf9ff;
+    --black: #0a0a0a;
+}
+
+body
+{
+    background-color: var(--blue);
+    color: var(--white);
+    font-family: "Georama", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    overflow-x: hidden;
+    background-image: url("../images/logo-black-ko.svg");
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    background-position: center center;
+}
+img{max-width: 100%;}
+h1, h2, h3, h4{
+font-family: 'airborne_gpbold';
+font-weight: bolder;
+font-size: 1.1em;
+}
+h1{font-size: 3em; margin-bottom: 12px;}
+h2{font-size: 2em; margin-bottom: 12px;}
+.hero{width: 100%;
+max-width: 100%;
+position: relative;
+min-height: max-content;
+border-bottom: 10px var(--black) solid;
+background: var(--blue);
+}
+p{margin-bottom: 10%;}
+.blue{background-color: var(--blue);}
+.yellow{background-color: var(--yellow);}
+.white{background-color: var(--white);}
+.black{background-color: var(--black);}
+
+.txt-blue{color: var(--blue);}
+.txt-yellow{color: var(--yellow);}
+.txt-white{color: var(--white);}
+
+.text-center{text-align: center;}
+
+.btn-yellow{background-color: var(--yellow); color: var(--blue);}
+.btn-yellow:hover{background-color: var(--white) !important; color: var(--blue) !important; }
+
+.hp-logo{filter:drop-shadow(rgba(26, 26, 26,0.5) 0.5rem 0.5rem 5px);}
+
+.top-btn{position: absolute;
+right: 8%;}
+
+.bold{font-weight: bold;}
+
+.border-rounded{border-radius: 15px;}
+
+.shd{box-shadow: 0px 0px 20px 6px #0000006e;}
+
+.agp{font-family: 'airborne_gpbold';}
+
+.video-container {
+    position: relative;
+}
+
+.video-container video {
+    filter: blur(3px);
+    opacity: 0.4;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 0;
+  padding: 0;
+}
+
+.navbar{border-bottom: 6px var(--black) solid;}
+
+/* Just styling the content of the div, the *magic* in the previous rules */
+.video-container .caption {
+  z-index: 1;
+  position: relative;
+}
+
+.overlay {
+    position: absolute;
+    z-index: 2;
+    background: #4d4d4d;
+    opacity: 0.5;
+  }
