@@ -38,6 +38,7 @@ font-size: 1.1em;
 }
 h1{font-size: 3em; margin-bottom: 12px;}
 h2{font-size: 2em; margin-bottom: 12px;}
+small, .small{font-size: .6em !important;}
 .hero{width: 100%;
 max-width: 100%;
 position: relative;
