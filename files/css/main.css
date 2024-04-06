@@ -29,6 +29,8 @@ body
     background-attachment: fixed;
     background-repeat:no-repeat;
     background-position: center center;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 img{max-width: 100%;}
 h1, h2, h3, h4{
