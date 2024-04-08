@@ -137,6 +137,7 @@
             document.exitFullscreen();
         }
         }
+        addEventListener("load", (event) => {document.querySelector("iframe").src += '?' + new Date().getTime();});
     </script>
 </body>
 
