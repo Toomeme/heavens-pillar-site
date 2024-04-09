@@ -1,3 +1,4 @@
-# heavens-pillar-site
+# The HEAVEN'S PILLAR Website
 
-https://huemint.com/website-1/#palette=232423-fbf9ff-fff786
+It's a dead simple Bootstrap 5 site, not much to say!
+
