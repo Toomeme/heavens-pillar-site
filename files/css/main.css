@@ -78,7 +78,7 @@ right: 8%;}
 
 .shd{box-shadow: 0px 0px 20px 6px #0000006e;}
 
-.agp{font-family: 'airborne_gpbold';}
+.agp{font-family: 'airborne_gpbold' !important;}
 
 .video-container {
     position: relative;
