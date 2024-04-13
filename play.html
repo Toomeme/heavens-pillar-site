@@ -124,6 +124,7 @@
         AOS.init();
       </script>
     <script type="text/javascript">
+      var myScreenOrientation = window.screen.orientation;
         function toggleFullscreen() {
         let elem = document.querySelector("iframe");
 
@@ -133,9 +134,17 @@
                 `Error attempting to enable fullscreen mode: ${err.message} (${err.name})`,
             );
             });
+            myScreenOrientation.lock("landscape")
+    .then(() => {
+      console.log(`Locked to landscape`);
+    })
+    .catch((error) => {
+      console.log(`${error}\n`);
+    });
             elem.focus();
         } else {
             document.exitFullscreen();
+            myScreenOrientation.unlock();
         }
         }
         addEventListener("load", (event) => {document.querySelector("iframe").src += '?' + new Date().getTime();});
