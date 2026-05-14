@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark blue sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark green sticky-top">
         <div class="container-fluid container">
           <a class="navbar-brand" href="/"><img src="./files/images/logo-horz.svg" alt="heavens pillar game" width="225" height="auto" class="agp"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,14 +69,14 @@
         <div id="abt"></div>
         <section class="py-5">
             <div class="container px-5">
-                <div class="row blue border-rounded mb-5 shd" data-aos="fade-up">
+                <div class="row green border-rounded mb-5 shd" data-aos="fade-up">
                     <div class="col-12 px-5">
                     <h2 class="mt-5">The Eight Pillars Are Crumbling</h2>
                     <p class="lead">Embark on a thrilling journey in <em>Heaven's Pillar</em>&nbsp;&mdash; a fast paced 2-player beat&nbsp;'em&nbsp;up video game where you'll immerse yourself in the struggle of two gods trapped in mortal shells striving to reclaim their stolen divinity and restore celestial harmony.</p>
                     </div>
                 </div>
-                <div class="row blue border-rounded mb-5 shd flex-row-reverse" data-aos="fade-left">
-                    <div class="col-12 col-sm-4 p-0">
+                <div class="row green border-rounded mb-5 shd flex-row-reverse" data-aos="fade-left">
+                    <div class="col-12 col-sm-4 p-0 d-flex align-items-center">
                         <img src="./files/images/combat.png" alt ="screenshot of heaven's pillar combat gameplay"class="border-rounded">
                     </div>
                     <div class="col-12 col-sm-8 px-5">
@@ -84,8 +84,8 @@
                     <p class="lead">Experience intense, lightning-fast combat as you unleash devastating combos and special attacks against waves of formidable foes. With seamless controls and fluid animations, every punch, kick, and throw feels incredibly satisfying as you master the art of combat and unleash your divine prowess upon your enemies.</p>
                 </div>
                 </div>
-                <div class="row blue border-rounded mb-5 shd" data-aos="fade-right">
-                    <div class="col-12 col-sm-4 p-0">
+                <div class="row green border-rounded mb-5 shd" data-aos="fade-right">
+                    <div class="col-12 col-sm-4 p-0 d-flex align-items-center">
                         <img src="./files/images/2-player.png" alt="screenshot of heavens pillar, a new beat em up game" class="border-rounded">
                     </div>
                     <div class="col-12 col-sm-8 px-5">
@@ -119,6 +119,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+        document.querySelector("#year").textContent = new Date().getFullYear();
       </script>
 </body>
 

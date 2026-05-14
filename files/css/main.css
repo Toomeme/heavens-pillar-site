@@ -9,28 +9,36 @@
 }
 :root
 {
-    --blue: #011928;
+    --green: #122022;
     --yellow: #fff786;
     --white: #fbf9ff;
     --black: #0a0a0a;
 }
 
-body
-{
-    background-color: var(--blue);
+body {
+    background-color: var(--green);
     color: var(--white);
     font-family: "Georama", sans-serif;
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
+
     overflow-x: hidden;
-    background-image: url("../images/logo-black-ko.svg");
-    background-size: contain;
-    background-attachment: fixed;
-    background-repeat:no-repeat;
-    background-position: center center;
     max-width: 100%;
-    overflow-x: hidden;
+
+    background-image:
+        linear-gradient(
+            to bottom,
+            rgba(4, 12, 14, 0.15) 0%,
+            rgba(4, 12, 14, 0.35) 45%,
+            rgba(2, 6, 8, 0.75) 100%
+        ),
+        url("../images/site-bg.jpg");
+
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 main{    
   max-width: 100%;
@@ -50,22 +58,22 @@ max-width: 100%;
 position: relative;
 min-height: max-content;
 border-bottom: 10px var(--black) solid;
-background: var(--blue);
+background: var(--green);
 }
 p{margin-bottom: 10%;}
-.blue{background-color: var(--blue);}
+.green{background: rgba(10, 14, 18, 0.82);}
 .yellow{background-color: var(--yellow);}
 .white{background-color: var(--white);}
 .black{background-color: var(--black);}
 
-.txt-blue{color: var(--blue);}
+.txt-green{color: var(--green);}
 .txt-yellow{color: var(--yellow);}
 .txt-white{color: var(--white);}
 
 .text-center{text-align: center;}
 
-.btn-yellow{background-color: var(--yellow); color: var(--blue);}
-.btn-yellow:hover{background-color: var(--white) !important; color: var(--blue) !important; }
+.btn-yellow{background-color: var(--yellow); color: var(--green);}
+.btn-yellow:hover{background-color: var(--white) !important; color: var(--green) !important; }
 
 .hp-logo{filter:drop-shadow(rgba(26, 26, 26,0.5) 0.5rem 0.5rem 5px);}
 
