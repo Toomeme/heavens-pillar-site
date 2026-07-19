@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Try out the Heaven's Pillar demo directly in your browser. Start playing now">
+    <meta name="description" content="Try out the HEAVEN'S PILLAR demo directly in your browser. Start playing now">
     <title>PLAY THE DEMO · HEAVEN'S PILLAR</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
@@ -20,10 +20,15 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Site CSS -->
     <link href="./files/css/main.css" rel="stylesheet">
+    <style>
+      strong{
+        font-weight: 600;
+      }
+    </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark green sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-dark green sticky-top">
         <div class="container-fluid container">
           <a class="navbar-brand" href="/"><img src="./files/images/logo-horz.svg" alt="heavens pillar game" width="225" height="auto" class="agp"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,6 +45,9 @@
               <li class="nav-item mx-3">
                 <a class="nav-link bold" href="/characters">Characters</a>
               </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link bold" href="/download">Download</a>
+              </li>
               <li class="nav-item mx-3 d-lg-none">
                 <a class="nav-link bold" href="/play">Play Demo</a>
               </li>
@@ -53,28 +61,43 @@
     <main>
         <!--HERO-->
         <div class="mb-4 hero container">
-            <div class="row justify-content-center">
-                        <div class="col-9 px-5">
-                            <div class="ratio ratio-16x9 mb-2">
-                            <iframe src="https://toomeme.github.io/xiao-wasm/" fsrameborder="0" scrolling="no" allowfullscreen="true" allow="fullscreen"></iframe>
-                        </div>
-                        <button class="btn btn-yellow btn-lg bold mb-3" onclick="toggleFullscreen()">Fullscreen (F10)</a>
-                        </div>
+            <div class="row justify-content-center green">
+              <div class="col-6 px-5">
+                <div class="ratio ratio-4x3 mb-2">
+                  <iframe src="https://toomeme.github.io/hp-wasm/" fsrameborder="0" scrolling="no" allowfullscreen="true" allow="fullscreen"></iframe>
+                </div>
+              </div>
             </div>
         </div>
+
+        <section>
+          <div class="container">
+          <div class="row green border-rounded mb-5 shd">
+            <div class="col-12 col-sm-4 p-0">
+                <img src="./files/images/logo-color.svg" class="border-rounded pt-5 px-3 mb-5" alt="heavens pillar game" class="agp">
+            </div>
+            <div class="col-12 col-sm-8 px-5">
+            <h2 class="mt-5">Help Shape the Game</h2>
+            <p class="lead mb-4">Enjoying the demo? Found a bug? Have ideas for improvements?
+            <br><br>Your feedback helps make the final game even better. Whether it's a gameplay suggestion, balance concern, technical issue, or just your overall impressions, we'd love to hear from you.</p>
+            <p class="mb-4"><a class="btn btn-yellow btn-lg bold" href="/feedback">FEEDBACK&nbsp;&#187;</a></p>
+        </div>
+        </div>
+      </div>
+        </section>
+
         <section class="pb-5 pt-3">
             <div class="container px-5">
                 <div class="row green border-rounded mb-5 shd">
                     <div class="col-12 px-5">
-                    <h2 class="mt-5">Heaven's Pillar Early Gameplay Sample</h2>
-                    <p class="lead mb-2">This demo includes a single player high score mode to introduce the game's combat system.</p>
-                    <em>Please note in this gameplay demo, only Meihua Lin will be playable.</em>
+                    <h2 class="mt-5"><em>HEAVEN&rsquo;S PILLAR</em> Gameplay Sample</h2>
+                    <p class="lead mb-2">This demo includes a high score mode to introduce the game's combat system, and can be played single player, local co-op or online co-op.</p>
 
-                    <h3 class="mt-4 text-center">Default Controls</h3>
-                    <div class="row justify-content-center mb-5">
-                    <div class="col-12 col-sm-6">
-                    <h4 class="text-center">Keyboard</h4>
-                    <ul class="lead text-center" style="list-style: inside;">
+                    <h3 class="mt-5 mb-4">Default Controls</h3>
+                    <div class="row justify-content-around mb-5">
+                    <div class="col-12 col-sm-5 d-flex flex-column">
+                    <h4>Keyboard</h4>
+                    <ul class="lead">
                         <li><strong>Movement:</strong> WASD</li>
                         <li><strong>Punch:</strong> K</li>
                         <li><strong>Kick:</strong> O</li>
@@ -83,10 +106,10 @@
                         <li><strong>Pause:</strong> Enter</li>
                     </ul>
                     </div>
-                    <div class="col-12 col-sm-6">
-                        <h4 class="text-center">Gamepad</h4>
-                        <ul class="lead text-center" style="list-style: inside;">
-                            <li><strong>Movement:</strong> Directional Pad</li>
+                    <div class="col-12 col-sm-5 d-flex flex-column">
+                        <h4>Gamepad</h4>
+                        <ul class="lead">
+                            <li><strong>Movement:</strong> Directional Pad / Analog</li>
                             <li><strong>Punch:</strong> X / &#9723;</li>
                             <li><strong>Kick:</strong> Y / &#9651;</li>
                             <li><strong>Special:</strong> B / &#128901;</li>
@@ -103,7 +126,7 @@
     </main>
     <footer class="d-flex flex-wrap py-3 mt-4 black">
       <div class="container">
-          <div class="row justify-content-between align-items-center mb-4">
+          <div class="row justify-content-between align-items-center my-4">
     <div class="col-12 col-md-10 d-flex">
       <a href="index.html" class="mb-3 me-3 mb-md-0 text-white bold text-decoration-none lh-1">
         <img src="./files/images/logo-color.svg" width="100" height="auto" alt="heavens pillar demo" class="agp"/>
