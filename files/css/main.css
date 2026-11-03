@@ -1,12 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&display=swap');
-@font-face {
-    font-family: 'airborne_gpbold';
-    src: url('../fonts/airborne_gp-webfont.woff2') format('woff2'),
-         url('../fonts/airborne_gp-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
 :root
 {
     --green: #122022;
@@ -18,9 +11,9 @@
 body {
     background-color: var(--green);
     color: var(--white);
-    font-family: "Georama", sans-serif;
+    font-family: "Cantarell", sans-serif;
     font-optical-sizing: auto;
-    font-weight: normal;
+    font-weight: 300;
     font-style: normal;
 
     overflow-x: hidden;
@@ -45,12 +38,12 @@ main{
   overflow-x: hidden;}
 img{max-width: 100%;}
 h1, h2, h3, h4{
-font-family: 'airborne_gpbold';
+font-family: "Quintessential", serif;
 font-weight: bolder;
-font-size: 1.1em;
+font-size: 2.5rem;
 }
-h1{font-size: 3em; margin-bottom: 12px;}
-h2{font-size: 2em; margin-bottom: 12px;}
+h1{font-size: 3.5em; margin-bottom: 12px;}
+h2{font-size: 2.5em; margin-bottom: 12px;}
 h3{font-size: 1.5em; margin-bottom: 12px;}
 small, .small{font-size: .6em !important;}
 .hero{width: 100%;
@@ -86,7 +79,7 @@ right: 8%;}
 
 .shd{box-shadow: 0px 0px 20px 6px #0000006e;}
 
-.agp{font-family: 'airborne_gpbold' !important;}
+.agp{font-family: "Quintessential", serif !important;}
 
 .video-container {
     position: relative;
